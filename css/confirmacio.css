@@ -1,0 +1,156 @@
+*{ /* saxo */
+    box-sizing: border-box;
+}
+
+/* Cos de la pàgina */
+body{ /* saxo */
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+
+    background-color: #cdcdcd;
+}
+
+/* Estils de textos */
+h2{
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 60px;
+    text-align: center;
+}
+
+p{ /* saxo */
+    font-size: 0.9em;
+    text-align: center;
+}
+a{ /* saxo */
+    padding-top: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #ee2a27;
+    text-align: center;
+}
+a:hover{
+    color: #d53330;
+}
+
+/* Estils Container */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estils Recuadre */
+#square #form{
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid #0D0D0D;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding-bottom: 70px;
+    padding-inline: 40px;
+
+    margin-top: 70px;
+    max-width: 450px;
+}
+
+#square .content{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+/* Estils Imatges */
+.img-logo-form{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding-top: 50px;
+}
+
+.img-logo-form #logo{
+    width: 250px;
+    justify-content: center;
+}
+
+/* Secció Footer */
+footer { /* saxo */
+    text-align: center;
+    color: #333;
+    padding: 30px;
+    margin-top: 100px;
+
+    height: 100%;
+
+    background-color: #000;
+    font-size: 14px;
+}
+
+footer .container{ /* saxo */
+    display: flex;
+    flex-direction: column;
+}
+
+footer img{ /* saxo */
+    height: 50px;
+    width: 250px;
+
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+footer .socialmedia-img img{ /* saxo */
+    height: 25px;
+    width: 25px;
+
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.footer-links{ /* saxo */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+
+.footer-links a{ /* saxo */
+    text-decoration: none;
+    color: #666;
+}
+
+
+.content2 .content2-container{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width:770px){
+
+p{
+    margin: 50px;
+}
+
+#square #form{
+    max-width: 600px;
+    height: 80vh;
+}
+
+a{
+    padding-bottom: 20px;
+}
+
+/* Footer Responsive Desktop */
+.footer-links{ /* saxo */
+    flex-direction: row;
+}
+
+footer p{ /* saxo */
+    text-align: center;
+}
+}

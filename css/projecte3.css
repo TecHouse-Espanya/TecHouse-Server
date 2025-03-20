@@ -1,0 +1,328 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Montserrat';
+    margin: 0;
+    background-color: whitesmoke;
+
+}
+
+h2{ font-size: 2em;}
+h3{ font-size: 1.7em;}
+p{ font-size: 1em; font-weight: lighter;}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+/* Estilos para el navbar */
+#logo{ /* saxo */
+    width: 200px;
+    height: 35px;
+    margin: 20px;
+}
+
+#menu{
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+#hero{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../media/projecte3.html/projecte3_hero.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#hero h1{
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    font-size: 3.5em;
+
+}
+
+/*Projecte 3 part 1 Mobile*/
+#projecte3-desktop{
+    display: none;
+}
+
+#projecte3{
+    background-color: black;
+
+}
+
+#projecte3 .container{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 25px;
+    max-width: 100%;
+    align-items: center;
+
+}
+
+#projecte3 .text1{
+    text-align: center;
+    margin: 0;
+    padding-top: 10vh;
+    padding: 70px 25px;
+    color: rgb(255, 255, 255);
+}
+
+#projecte3-img .img-container{ 
+    
+    height: 75vh;
+
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    )
+    ,url("../media/projecte3.html/foto1_projecte3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+/*Projecte 3 part 2  Mobile*/
+#projecte3-2n-desktop{
+    display: none;
+}
+
+#projecte3-2n{
+    background-color: whitesmoke;
+
+}
+
+#projecte3-2n .container{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 25px;
+    max-width: 100%;
+    align-items: center; 
+
+}
+
+#projecte3-2n .text2{
+    text-align: center;
+    margin: 0;
+    padding-top: 10vh;
+    padding: 70px 25px;
+
+}
+
+
+#projecte3-2n-img .img-container{ 
+    
+    height: 75vh;
+
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    )
+    ,url("../media/projecte3.html/foto2_projecte3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+
+/* Secció Footer */
+footer {
+    text-align: center;
+    color: #333;
+    padding: 30px;
+
+    height: 70%;
+
+    background-color: #000;
+    font-size: 14px;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+}
+
+footer img{
+    height: 50px;
+    width: 250px;
+
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+footer .socialmedia-img img{
+    height: 25px;
+    width: 25px;
+
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: #666;
+}
+
+
+#projecte1-desktop{
+    display: none;
+}
+
+
+@media (min-width: 760px){
+
+    footer {
+        text-align: center;
+        color: #333;
+        padding: 30px;
+    
+        height: 45%;
+    
+        background-color: #000;
+        font-size: 14px;
+    }
+
+    .footer-links{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-bottom: 10px;
+        gap: 20px;
+    }
+
+}
+
+@media (min-width: 889px){
+    
+    h2{ font-size: 2em;}
+
+    #hero{
+        height: 120vh;
+    }
+    
+    #nav{ /* saxo */
+        position: fixed;
+        width: 100%;
+    }
+    
+    .footer-links{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-bottom: 10px;
+        gap: 20px;
+    }
+    
+    /*Projecte 3 part 1 desktop*/
+    #projecte3{
+        display:none;
+        padding: 100px 25px;
+        
+    }
+
+    #projecte3-desktop{
+        display: block;
+        padding: 50px;
+        background-color: black;
+        color: white;
+    }
+
+    #projecte3-desktop .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #projecte3-text{
+        flex: 1;
+        padding: 20px;
+    }
+    
+    #projecte3-img .img-container{ 
+        display: none;
+    }   
+
+    #img-p1{
+        width: 500px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        padding-left: 50px;
+    }
+
+    /*Projecte 3 part 2 desktop*/
+
+    #projecte3-2n{
+        display:none;
+        padding: 100px 25px;
+    }
+
+
+    #projecte3-2n-desktop{
+        display: block;
+        background-color: whitesmoke;
+        padding: 50px
+    }
+
+    #projecte3-2n-desktop .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #projecte3-2n-text{
+        flex: 1;
+        padding: 2px
+        
+    }
+    
+    #projecte3-2n-img .img-container{ 
+        display: none;
+    }   
+
+    #img-p2{
+        width: 500px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        padding-left: 0px;
+        padding-right: 50px;
+
+    }
+ 
+
+
+    
+
+}

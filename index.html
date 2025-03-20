@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecHouse</title>
+    <link rel="icon" href="media/favicon-32x32.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Secció Navbar Personalitzat amb Bootstrap --> 
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark" id="nav">
+        <div class="container">
+            <a class="navbar-brand text-white" href="index.html"><img id="logo" src="media/logo.png" alt="TecHouse"></a>
+
+            <!-- Botó hamburguesa -->
+            <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto" style="font-size: 0.9em;">
+                    <li class="nav-item"><a class="nav-link text-white" href="html/contacte.html">Contacte</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="html/projectes.html">Projectes</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="html/metode.html">Mètode</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="html/productes.html">Productes</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="html/serveis.html">Serveis</a></li>
+
+                    <!-- Menú desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                            Plans
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" style="background-color: rgb(13, 13, 13); font-size: 0.8em;">
+                            <li><a class="dropdown-item text-white" href="html/primerpla.html">Pla Estandaritzat</a></li>
+                            <li><a class="dropdown-item text-white" href="html/segonpla.html">Pla Avançat</a></li>
+                            <li><a class="dropdown-item text-white" href="html/tercerpla.html">Pla Personalitzat</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-white" href="html/login.html">Inicia Sessió / Registrar-se</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Imatge Hero -->
+    <section id="hero">
+        <h1>Protegeix <br> El Que Importa</h1>
+    </section>
+    <!-- Sección Qui Som -->
+    <section id="techouse">
+        <div class="container">
+            <h2>Què és <span class="color-house">TecHouse</span></h2>
+            <p>A TecHouse som una empresa especialitzada en domòtica, dedicada a garantir la seguretat domèstica i l’eficiència energètica a les llars. Tot i que comptem amb una trajectòria recent en el sector, el nostre equip està format per tècnics altament qualificats i compromesos amb l’excel·lència. <br> <br> La nostra missió és oferir solucions innovadores que permetin als nostres clients gaudir d’una llar intel·ligent, segura i sostenible, optimitzant el consum d’energia i millorant el benestar quotidià.</p>
+        </div>
+    </section>
+    <!-- Sección El teu pla -->
+    <section id="plan-description">
+        <div class="container">
+            <div class="img-plan-description"><img id="img-plan" src="media/Index.html/support.png" alt=""></div>
+            <div class="textos">
+                <h2>Adquereix el teu pla, nosaltres fem la resta</h2>
+                <p>A TecHouse ens encarreguem de tot perquè puguis gaudir d’una llar intel·ligent sense preocupacions. Selecciona el pla que millor s’adapti a les teves necessitats i el nostre equip de tècnics especialitzats s’encarregarà de la instal·lació i configuració. </p>
+                <form action="html/serveis.html">
+                    <button>Adquereix el Teu Pla</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Secció La nostra missió -->
+    <section id="mission">
+        <div class="container">
+            <div class="textos">
+                <h2>La Missió  de TecHouse</h2>
+                <p>A TecHouse, la nostra missió és garantir la protecció del nostre client, que és el més important per a nosaltres. Ens comprometem a millorar cada dia en el nostre tracte, per tal que els nostres clients se sentin còmodes i ben atesos.</p>
+                <form action="html/metode.html">
+                    <button>La Nostra Missió</button>
+                </form>
+            </div>
+            
+            <div class="img-mission-description"><img id="img-mission" src="media/Index.html/house.png" alt=""></div>
+        </div>
+    </section>
+    <!-- Secció del Peu de pàgina -->
+    <footer>
+        <img src="media/logo.png" alt="">
+        <div class="container">
+            <div class="socialmedia-img">
+                <a href="https://www.instagram.com/techouse_esp/"><img src="media/insta.png" alt=""></a>
+                <a href="https://x.com/?lang=es"><img src="media/x.png" alt=""></a>
+            </div>
+            <div class="footer-links">
+                <a href="#">Avís de privacitat</a>
+                <a href="#">Condicions d'ús legal</a>
+                <a href="#">Protecció de dades</a>
+                <a href="#">Política de cookies</a>
+                <a href="#">Newsletter</a>
+            </div>
+            <p>©2025 TecHouse S.L.</p>
+        </div>
+    </footer>
+</body>
+</html>
